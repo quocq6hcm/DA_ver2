@@ -26,6 +26,38 @@ namespace DA_ShoesOnlineStore
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            // my js bundles
+            bundles.Add(new ScriptBundle("~/bundles/easing").Include(
+                "~/Scripts/ViewTemplate/easing.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jquery-1.11.0.min").Include(
+                "~/Scripts/ViewTemplate/jquery-1.11.0.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jquery.flexslider").Include(
+                "~/Scripts/ViewTemplate/jquery.flexslider.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/memenu").Include(
+                "~/Scripts/ViewTemplate/memenu.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/move-top").Include(
+                "~/Scripts/ViewTemplate/move-top.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/responsiveslides.min").Include(
+                "~/Scripts/ViewTemplate/responsiveslides.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/simpleCart.min").Include(
+                "~/Scripts/ViewTemplate/simpleCart.min.js"));
+
+            // my css bundles
+            bundles.Add(new StyleBundle("~/bundles/bootstrap1").Include(
+                "~/Scripts/ViewTemplate/bootstrap.css"));
+            bundles.Add(new StyleBundle("~/bundles/flexslider").Include(
+                "~/Scripts/ViewTemplate/flexslider.css"));
+            bundles.Add(new StyleBundle("~/bundles/memenu").Include(
+                "~/Scripts/ViewTemplate/memenu.css"));
+            bundles.Add(new StyleBundle("~/bundles/style").Include(
+                "~/Scripts/ViewTemplate/style.css"));
         }
     }
 }

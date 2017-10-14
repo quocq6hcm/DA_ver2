@@ -1,18 +1,19 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-
-
+<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Free Style A Ecommerce Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
-<link href="~/Content/ViewTemplate/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<title>Free Style A Ecommerce Category Flat Bootstarp Resposive Website Template | Single :: w3layouts</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="~/Scripts/ViewTemplate/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="~/Content/ViewTemplate/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,8 +24,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <!--//fonts-->
-<script type="text/javascript" src="~/Scripts/ViewTemplate/move-top.js"></script>
-<script type="text/javascript" src="~/Scripts/ViewTemplate/easing.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 					jQuery(document).ready(function($) {
 						$(".scroll").click(function(event){		
@@ -34,9 +35,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					});
 				</script>	
 <!-- start menu -->
-<script src="~/Scripts/ViewTemplate/simpleCart.min.js"> </script>
-<link href="~/Content/ViewTemplate/memenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="~/Scripts/ViewTemplate/memenu.js"></script>
+<script src="js/simpleCart.min.js"> </script>
+<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/memenu.js"></script>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>				
 </head>
 <body> 
@@ -51,14 +52,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 			<div class="col-md-4 top-header-middle">
-				<a href="index.html"><img src="~/Images/Sample/logo-4.png" alt="" /></a>
+				<a href="index.html"><img src="images/logo-4.png" alt="" /></a>
 			</div>
 			<div class="col-md-4 top-header-right">
 				<div class="cart box_1">
 						<a href="checkout.html">
 						<h3> <div class="total">
 							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-							<img src="~/Images/Sample/cart-1.png" alt="" />
+							<img src="images/cart-1.png" alt=""/></h3>
 						</a>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						<div class="clearfix"> </div>
@@ -69,7 +70,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <!--top-header-->
-	<!--bottom-header-->
+<!--bottom-header-->
 	<div class="header-bottom">
 		<div class="container">
 			<div class="top-nav">
@@ -300,239 +301,228 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!--bottom-header-->
-	<!--banner-starts-->
-	<div class="bnr" id="home">
-		<div  id="top" class="callbacks_container">
-			<ul class="rslides" id="slider4">
-			    <li>
-					<div class="banner-1"></div>
-				</li>
-				<li>
-					<div class="banner-2"></div>
-				</li>
-				<li>
-					<div class="banner-3"></div>
-				</li>
-			</ul>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	<!--banner-ends--> 
-	<!--Slider-Starts-Here-->
-				<script src="~/Scripts/ViewTemplate/responsiveslides.min.js"></script>
-			 <script>
-			    // You can also use "$(window).load(function() {"
-			    $(function () {
-			      // Slideshow 4
-			      $("#slider4").responsiveSlides({
-			        auto: true,
-			        pager: true,
-			        nav: false,
-			        speed: 500,
-			        namespace: "callbacks",
-			        before: function () {
-			          $('.events').append("<li>before event fired.</li>");
-			        },
-			        after: function () {
-			          $('.events').append("<li>after event fired.</li>");
-			        }
-			      });
-			
-			    });
-			  </script>
-			<!--End-slider-script-->
-	<!--start-banner-bottom--> 
-	<div class="banner-bottom">
+	<!--start-breadcrumbs-->
+	<div class="breadcrumbs">
 		<div class="container">
-			<div class="banner-bottom-top">
-				<div class="col-md-6 banner-bottom-left">
-					<div class="bnr-one">
-						<div class="bnr-left">
-							<h1><a href="single.html">Duis dictum volutpat</a></h1>
-							<p>Nulla tempus facilisis purus at.</p>
-							<div class="b-btn"> 
-								<a href="single.html">SHOP NOW</a>
+			<div class="breadcrumbs-main">
+				<ol class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li class="active">Lorem Ipsum</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!--end-breadcrumbs-->
+	<!--start-single-->
+	<div class="single contact">
+		<div class="container">
+			<div class="single-main">
+				<div class="col-md-9 single-main-left">
+				<div class="sngl-top">
+					<div class="col-md-5 single-top-left">	
+						<div class="flexslider">
+							<ul class="slides">
+								<li data-thumb="images/s1.jpg">
+									<img src="images/s1.jpg" />
+								</li>
+								<li data-thumb="images/s2.jpg">
+									<img src="images/s2.jpg" />
+								</li>
+								<li data-thumb="images/s3.jpg">
+									<img src="images/s3.jpg" />
+								</li>
+								<li data-thumb="images/s4.jpg">
+									<img src="images/s4.jpg" />
+								</li>
+							</ul>
+						</div>
+<!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+	<script>
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+});
+</script>
+				</div>	
+				<div class="col-md-7 single-top-right">
+					<div class="details-left-info simpleCart_shelfItem">
+						<h3>Accessories Latest</h3>
+						<p class="availability">Availability: <span class="color">In stock</span></p>
+						<div class="price_single">
+							<span class="reducedfrom">$800.00</span>
+							<span class="actual item_price">$600.00</span><a href="#">click for offer</a>
+						</div>
+						<h2 class="quick">Quick Overview:</h2>
+						<p class="quick_desc"> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; es</p>
+						<ul class="product-colors">
+							<h3>available Colors ::</h3>
+							<li><a class="color1" href="#"><span> </span></a></li>
+							<li><a class="color2" href="#"><span> </span></a></li>
+							<li><a class="color3" href="#"><span> </span></a></li>
+							<li><a class="color4" href="#"><span> </span></a></li>
+							<li><a class="color5" href="#"><span> </span></a></li>
+							<li><a class="color6" href="#"><span> </span></a></li>
+							<li><a class="color7" href="#"><span> </span></a></li>
+							<li><a class="color8" href="#"><span> </span></a></li>
+							<div class="clear"> </div>
+						</ul>
+						<ul class="size">
+							<h3>Length</h3>
+							<li><a href="#">7</a></li>
+							<li><a href="#">6</a></li>
+						</ul>
+						<div class="quantity_box">
+							<ul class="product-qty">
+								<span>Quantity:</span>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+							</ul>
+						</div>
+					<div class="clearfix"> </div>
+				<div class="single-but item_add">
+					<input type="submit" value="add to cart"/>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+					<div class="latest products">
+						<div class="product-one">
+							<div class="col-md-4 product-left single-left"> 
+								<div class="p-one simpleCart_shelfItem">
+									
+									<a href="#">
+								<img src="images/shoes-1.png" alt="" />
+								<div class="mask mask1">
+									<span>Quick View</span>
+								</div>
+							</a>
+									<h4>Aenean placerat</h4>
+									<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
+									
+								</div>
 							</div>
-						</div>
-						<div class="bnr-right"> 
-							<a href="single.html"><img src="~/Images/Sample/b-1.jpg" alt="" /></a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="col-md-6 banner-bottom-right">
-					<div class="bnr-two">
-						<div class="bnr-left">
-							<h2><a href="single.html">Phasellus quis nunc</a></h2>
-							<p>Nulla tempus facilisis purus at.</p>
-							<div class="b-btn"> 
-								<a href="single.html">SHOP NOW</a>
+							<div class="col-md-4 product-left single-left"> 
+								<div class="p-one simpleCart_shelfItem">
+									<a href="#">
+								<img src="images/shoes-2.png" alt="" />
+								<div class="mask mask1">
+									<span>Quick View</span>
+								</div>
+							</a>
+									<h4>Aenean placerat</h4>
+									<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
+									
+								</div>
 							</div>
+							<div class="col-md-4 product-left single-left"> 
+								<div class="p-one simpleCart_shelfItem">
+									<a href="#">
+								<img src="images/shoes-3.png" alt="" />
+								<div class="mask mask1">
+									<span>Quick View</span>
+								</div>
+							</a>
+									<h4>Aenean placerat</h4>
+									<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>									
+								</div>
+							</div>
+							<div class="clearfix"> </div>
 						</div>
-						<div class="bnr-right"> 
-							<a href="single.html"><img src="~/Images/Sample/b-2.jpg" alt="" /></a>
+						<div class="product-one">
+							<div class="col-md-4 product-left single-left"> 
+								<div class="p-one simpleCart_shelfItem">
+									<a href="#">
+								<img src="images/shoes-13.png" alt="" />
+								<div class="mask mask1">
+									<span>Quick View</span>
+								</div>
+							</a>
+									<h4>Aenean placerat</h4>
+									<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>									
+								</div>
+							</div>
+							<div class="col-md-4 product-left single-left"> 
+								<div class="p-one simpleCart_shelfItem">
+									<a href="#">
+								<img src="images/shoes-5.png" alt="" />
+								<div class="mask mask1">
+									<span>Quick View</span>
+								</div>
+							</a>
+									<h4>Aenean placerat</h4>
+									<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>									
+								</div>
+							</div>
+							<div class="col-md-4 product-left single-left"> 
+								<div class="p-one simpleCart_shelfItem">
+									<a href="#">
+								<img src="images/shoes-6.png" alt="" />
+								<div class="mask mask1">
+									<span>Quick View</span>
+								</div>
+								</a>
+									<h4>Aenean placerat</h4>
+									<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>				
+								</div>
+							</div>
+							<div class="clearfix"> </div>
 						</div>
-						<div class="clearfix"> </div>
 					</div>
+				</div>
+				<div class="col-md-3 single-right">
+					<h3>Categories</h3>
+					<ul class="product-categories">
+						<li><a href="#">Blucher Shoe</a> <span class="count">(14)</span></li>
+						<li><a href="#">Clog Shoe</a> <span class="count">(2)</span></li>
+						<li><a href="#">Snow Boot Shoe</a> <span class="count">(2)</span></li>
+						<li><a href="#">Galesh Shoe</a> <span class="count">(11)</span></li>
+						<li><a href="#">pataugas Shoe</a> <span class="count">(3)</span></li>
+						<li><a href="#">Jazz Shoe</a> <span class="count">(3)</span></li>
+					</ul>
+					<h3>Colors</h3>
+					<ul class="product-categories">
+						<li><a href="#">Green</a> <span class="count">(14)</span></li>
+						<li><a href="#">Blue</a> <span class="count">(2)</span></li>
+						<li><a href="#">Red</a> <span class="count">(2)</span></li>
+						<li><a href="#">Gray</a> <span class="count">(8)</span></li>
+						<li><a href="#">Green</a> <span class="count">(11)</span></li>
+						<li><a href="#">Yellow</a> <span class="count">(2)</span></li>
+					</ul>
+					<h3>Sizes</h3>
+					<ul class="product-categories">
+						<li><a href="#">5.5</a> <span class="count">(14)</span></li>
+						<li><a href="#">6</a> <span class="count">(2)</span></li>
+						<li><a href="#">6.5</a> <span class="count">(2)</span></li>
+						<li><a href="#">7</a> <span class="count">(8)</span></li>
+						<li><a href="#">7.5</a> <span class="count">(11)</span></li>
+					</ul>
+					<h3>Price</h3>
+					<ul class="product-categories p1">
+						<li><a href="#">600$-700$</a> <span class="count">(14)</span></li>
+						<li><a href="#">700$-800$</a> <span class="count">(2)</span></li>
+						<li><a href="#">800$-900$</a> <span class="count">(2)</span></li>
+						<li><a href="#">900$-1000$</a> <span class="count">(8)</span></li>
+						<li><a href="#">1000$-1100$</a> <span class="count">(11)</span></li>
+					</ul>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-	<!--end-banner-bottom--> 
-	<!--start-shoes--> 
-	<div class="shoes"> 
-		<div class="container"> 
-			<div class="product-one">
-				<div class="col-md-3 product-left"> 
-					<div class="p-one simpleCart_shelfItem">							
-							<a href="single.html">
-								<img src="~/Images/Sample/shoes-1.png" alt="" />
-								<div class="mask">
-									<span>Quick View</span>
-								</div>
-							</a>
-						<h4>Aenean placerat</h4>
-						<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-					
-					</div>
-				</div>
-				<div class="col-md-3 product-left"> 
-					<div class="p-one simpleCart_shelfItem">
-						
-						<a href="single.html">
-								<img src="~/Images/Sample/shoes-2.png" alt="" />
-								<div class="mask">
-									<span>Quick View</span>
-								</div>
-							</a>
-						<h4>Aenean placerat</h4>
-						<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-						
-					</div>
-				</div>
-				<div class="col-md-3 product-left"> 
-					<div class="p-one simpleCart_shelfItem">
-						
-						<a href="single.html">
-								<img src="~/Images/Sample/shoes-3.png" alt="" />
-								<div class="mask">
-									<span>Quick View</span>
-								</div>
-							</a>
-						<h4>Aenean placerat</h4>
-						<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-						
-					</div>
-				</div>
-				<div class="col-md-3 product-left"> 
-					<div class="p-one simpleCart_shelfItem">
-						
-						<a href="single.html">
-								<img src="~/Images/Sample/shoes-13.png" alt="" />
-								<div class="mask">
-									<span>Quick View</span>
-								</div>
-							</a>
-						<h4>Aenean placerat</h4>
-						<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-						
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="product-one">
-				<div class="col-md-3 product-left"> 
-					<div class="p-one simpleCart_shelfItem">
-						
-						<a href="single.html">
-								<img src="~/Images/Sample/shoes-5.png" alt="" />
-								<div class="mask">
-									<span>Quick View</span>
-								</div>
-							</a>
-						<h4>Aenean placerat</h4>
-						<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-						
-					</div>
-				</div>
-				<div class="col-md-3 product-left"> 
-					<div class="p-one simpleCart_shelfItem">
-						
-						<a href="single.html">
-								<img src="~/Images/Sample/shoes-6.png" alt="" />
-								<div class="mask">
-									<span>Quick View</span>
-								</div>
-							</a>
-						<h4>Aenean placerat</h4>
-						<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-						
-					</div>
-				</div>
-				<div class="col-md-3 product-left"> 
-					<div class="p-one simpleCart_shelfItem">
-						
-						<a href="single.html">
-								<img src="~/Images/Sample/shoes-7.png" alt="" />
-								<div class="mask">
-									<span>Quick View</span>
-								</div>
-							</a>
-						<h4>Aenean placerat</h4>
-						<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-						
-					</div>
-				</div>
-				<div class="col-md-3 product-left"> 
-					<div class="p-one simpleCart_shelfItem">
-						
-						<a href="single.html">
-								<img src="~/Images/Sample/shoes-8.png" alt="" />
-								<div class="mask">
-									<span>Quick View</span>
-								</div>
-							</a>
-						<h4>Aenean placerat</h4>
-						<p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-						
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!--end-shoes-->
-	<!--start-abt-shoe-->
-	<div class="abt-shoe">
-		<div class="container"> 
-			<div class="abt-shoe-main">
-				<div class="col-md-4 abt-shoe-left">
-					<div class="abt-one">
-						<a href="single.html"><img src="~/Images/Sample/abt-1.jpg" alt="" /></a>
-						<h4><a href="single.html">Cras dolor ligula</a></h4>
-						<p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
-					</div>
-				</div>
-				<div class="col-md-4 abt-shoe-left">
-					<div class="abt-one">
-						<a href="single.html"><img src="~/Images/Sample/abt-2.jpg" alt="" /></a>
-						<h4><a href="single.html">Cras dolor ligula</a></h4>
-						<p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
-					</div>
-				</div>
-				<div class="col-md-4 abt-shoe-left">
-					<div class="abt-one">
-						<a href="single.html"><img src="~/Images/Sample/abt-3.jpg" alt="" /></a>
-						<h4><a href="single.html">Cras dolor ligula</a></h4>
-						<p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!--end-abt-shoe-->
+	<!--end-single-->
 	<!--start-footer-->
 	<div class="footer">
 		<div class="container">

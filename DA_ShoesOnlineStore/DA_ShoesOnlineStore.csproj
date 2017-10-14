@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -151,10 +157,50 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ViewTemplate\bootstrap.css" />
+    <Content Include="Content\ViewTemplate\flexslider.css" />
+    <Content Include="Content\ViewTemplate\memenu.css" />
+    <Content Include="Content\ViewTemplate\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Sample\abt-1.jpg" />
+    <Content Include="Images\Sample\abt-2.jpg" />
+    <Content Include="Images\Sample\abt-3.jpg" />
+    <Content Include="Images\Sample\b-1.jpg" />
+    <Content Include="Images\Sample\b-2.jpg" />
+    <Content Include="Images\Sample\banner-2.jpg" />
+    <Content Include="Images\Sample\banner-3.jpg" />
+    <Content Include="Images\Sample\banner.jpg" />
+    <Content Include="Images\Sample\cart-1.png" />
+    <Content Include="Images\Sample\cart-2.png" />
+    <Content Include="Images\Sample\cart.png" />
+    <Content Include="Images\Sample\close-1.png" />
+    <Content Include="Images\Sample\logo-4.png" />
+    <Content Include="Images\Sample\s-1.jpg" />
+    <Content Include="Images\Sample\s-2.jpg" />
+    <Content Include="Images\Sample\s-4.jpg" />
+    <Content Include="Images\Sample\s1.jpg" />
+    <Content Include="Images\Sample\s2.jpg" />
+    <Content Include="Images\Sample\s3.jpg" />
+    <Content Include="Images\Sample\s4.jpg" />
+    <Content Include="Images\Sample\search.png" />
+    <Content Include="Images\Sample\shoes-1.png" />
+    <Content Include="Images\Sample\shoes-10.png" />
+    <Content Include="Images\Sample\shoes-11.png" />
+    <Content Include="Images\Sample\shoes-12.png" />
+    <Content Include="Images\Sample\shoes-13.png" />
+    <Content Include="Images\Sample\shoes-15.png" />
+    <Content Include="Images\Sample\shoes-16.png" />
+    <Content Include="Images\Sample\shoes-2.png" />
+    <Content Include="Images\Sample\shoes-3.png" />
+    <Content Include="Images\Sample\shoes-5.png" />
+    <Content Include="Images\Sample\shoes-6.png" />
+    <Content Include="Images\Sample\shoes-7.png" />
+    <Content Include="Images\Sample\shoes-8.png" />
+    <Content Include="Images\Sample\shoes-9.png" />
+    <Content Include="Images\Sample\top-arrow.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -171,6 +217,13 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\ViewTemplate\easing.js" />
+    <Content Include="Scripts\ViewTemplate\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\ViewTemplate\jquery.flexslider.js" />
+    <Content Include="Scripts\ViewTemplate\memenu.js" />
+    <Content Include="Scripts\ViewTemplate\move-top.js" />
+    <Content Include="Scripts\ViewTemplate\responsiveslides.min.js" />
+    <Content Include="Scripts\ViewTemplate\simpleCart.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
