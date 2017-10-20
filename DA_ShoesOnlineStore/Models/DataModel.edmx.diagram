@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7c40e091875f49ff8de38b6100e50b05" Name="Diagram1">
+        <EntityTypeShape EntityType="SHOESWebSiteModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.CHITIETDONDATHANG" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.CTHD" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.DONDATHANG" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.Hoadon" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.KHUYENMAI" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.LOAISANPHAM" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.Manufacturer" Width="1.5" PointX="7.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.NguoiDung" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.NHACUNGCAP" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SHOESWebSiteModel.SANPHAM" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <AssociationConnector Association="SHOESWebSiteModel.FK_Donhang" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOESWebSiteModel.FK_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOESWebSiteModel.FK_MaHD" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOESWebSiteModel.FK_MaSPCTHD" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOESWebSiteModel.FK_User" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOESWebSiteModel.FK_MaNguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOESWebSiteModel.FK_KhuyenMai" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOESWebSiteModel.FK_LoaiSanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="SHOESWebSiteModel.FK_NCC" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
