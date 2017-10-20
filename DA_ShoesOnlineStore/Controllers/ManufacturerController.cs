@@ -12,7 +12,7 @@ namespace DA_ShoesOnlineStore.Controllers
 
 
         Models.SHOESWebSiteEntities _db = new Models.SHOESWebSiteEntities();
-        // GET: Manufacturer
+        //// GET: Manufacturer
         public ActionResult Index()
         { 
             var model = _db.NHACUNGCAPs.ToList();
