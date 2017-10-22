@@ -1,0 +1,246 @@
+﻿@model DA_ShoesOnlineStore.Models.NguoiDung
+
+@{
+    ViewBag.Title = "Register";
+    Layout = null;
+}
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gentelella Alela! | </title>
+
+    <!-- Bootstrap -->
+    <link href="~/Content/Login/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="~/Content/Login/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="~/Content/Login/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="~/Content/Login/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="~/Content/Login/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="login">
+
+
+    <div>
+        <a class="hiddenanchor" id="signup"></a>
+        <a class="hiddenanchor" id="signin"></a>
+
+        <div class="login_wrapper">
+            <div class="animate form login_form">
+                <section class="login_content">
+                    @using (Html.BeginForm("Register", "Home"))
+                    {
+
+                    
+                        <h1>Đăng ký</h1>
+                        <div>
+                           @* <input type="text"  class="form-control" placeholder="Username" required="" />*@
+                            @Html.TextBoxFor(Model => Model.HoTen, new { @class = "form-control", @placeholder = "Họ tên" })
+                        </div>
+                        <div>
+                            @*<input type="password" class="form-control" placeholder="Password" required="" />*@
+                            @Html.TextBoxFor(Model => Model.TaiKhoan ,new { @class = "form-control", @placeholder="Tài khoản"})
+                        </div>
+
+                        <div>
+                            @*<input type="password" class="form-control" placeholder="Password" required="" />*@
+                            @Html.PasswordFor(Model => Model.MatKhau, new { @class = "form-control", @placeholder = "Mật khẩu" })
+                        </div>
+
+                        <div>
+                            @*<input type="password" class="form-control" placeholder="Password" required="" />*@
+                            @Html.TextBoxFor(Model => Model.Email, new { @class = "form-control", @placeholder = "Email" })
+                        </div>
+
+                        <div>
+                            @*<input type="password" class="form-control" placeholder="Password" required="" />*@
+                            @Html.TextBoxFor(Model => Model.DiaChiKH, new { @class = "form-control", @placeholder = "Địa chỉ" })
+                        </div>
+
+                        <div>
+                            @*<input type="password" class="form-control" placeholder="Password" required="" />*@
+                            @Html.TextBoxFor(Model => Model.DienThoaiKH, new { @class = "form-control", @placeholder = "Điện thoại" })
+                        </div>
+                        <div>
+                            @Html.ValidationMessage("AddError")
+                        </div>
+                        @*<div>
+                  
+                            @Html.TextBoxFor(Model => Model.NamSinh, new { @class = "form-control", @placeholder = "Năm sinh" })
+                        </div>*@
+                        <div>
+                        
+                            <button type="submit" class="btn btn-info">Đăng ký</button>
+                            <br/>
+                            <br />
+                                
+                            @Html.ActionLink("Về trang chủ", "Index")
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="separator">
+                            <p class="change_link">
+                                Đã là thành viên ?
+                                <a href="#signup" class="to_register"> Đăng nhập </a>
+                            </p>
+
+                            <div class="clearfix"></div>
+                            <br />
+
+                            
+                        </div>
+                    }
+                </section>
+            </div>
+
+            <div id="register" class="animate form registration_form">
+                <section class="login_content">
+                    @using (Html.BeginForm("Login", "Home"))
+                    {
+                        <h1>Đăng nhập</h1>
+                        <div>
+                            @Html.TextBoxFor(Model => Model.TaiKhoan, new { @class = "form-control", @placeholder = "Tài khoản" })
+                        </div>
+                        <div>
+                            @Html.PasswordFor(Model => Model.MatKhau, new { @class = "form-control", @placeholder = "Mật khẩu" })
+                        </div>
+                        <div>
+                            @Html.ValidationMessage("LoginError")
+                        </div>
+                        <div>
+                            @Html.ValidationMessage("LoginUnexpectedError")
+                        </div>
+                        <div>
+                            @*<a class="btn btn-default submit" href="">Submit</a>*@
+                            <button type="submit" class="btn btn-success">Đăng nhập</button>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="separator">
+                            <p class="change_link">
+                                Chưa có tài khoản ?
+                                <a href="#signin" class="to_register"> Đăng Ký </a>
+                            </p>
+                            <br />
+                            <br />
+
+                            @Html.ActionLink("Về trang chủ", "Index")
+
+                            <div class="clearfix"></div>
+                            <br />
+
+                           
+                        </div>
+                    }
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+@*@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>NguoiDung</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaNguoiDung, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MaNguoiDung, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MaNguoiDung, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HoTen, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TaiKhoan, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TaiKhoan, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TaiKhoan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MatKhau, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MatKhau, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DiaChiKH, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DiaChiKH, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DiaChiKH, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DienThoaiKH, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DienThoaiKH, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DienThoaiKH, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NamSinh, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NamSinh, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NamSinh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.role, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.role, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.role, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@
