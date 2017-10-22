@@ -9,11 +9,8 @@ namespace DA_ShoesOnlineStore.Controllers
 {
     public class HomeController : Controller
     {
-<<<<<<< HEAD
         Models.SHOESWebSiteEntities _db = new Models.SHOESWebSiteEntities();
-=======
         Repositories.UserDAO userDAO = new Repositories.UserDAO();
->>>>>>> origin/master
         public ActionResult Index()
         {
             var model = _db.SANPHAMs.ToList();
