@@ -158,6 +158,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CHITIETDONDATHANG.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
@@ -255,6 +256,15 @@
     <Content Include="Images\Sample\shoes-8.png" />
     <Content Include="Images\Sample\shoes-9.png" />
     <Content Include="Images\Sample\top-arrow.png" />
+    <Content Include="Images\SanPham\BB01.jpg" />
+    <Content Include="Images\SanPham\BB02.jpg" />
+    <Content Include="Images\SanPham\CG01.jpg" />
+    <Content Include="Images\SanPham\CG02.jpg" />
+    <Content Include="Images\SanPham\DG01.jpg" />
+    <Content Include="Images\SanPham\DG02.jpg" />
+    <Content Include="Images\SanPham\GB01.jpg" />
+    <Content Include="Images\SanPham\XD01.jpg" />
+    <Content Include="Images\SanPham\XD02.jpg" />
     <Content Include="Models\DataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DataModel.edmx</DependentUpon>

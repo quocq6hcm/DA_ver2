@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DA_ShoesOnlineStore.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,11 @@ namespace DA_ShoesOnlineStore.Controllers
 {
     public class HomeController : Controller
     {
+        Models.SHOESWebSiteEntities _db = new Models.SHOESWebSiteEntities();
         public ActionResult Index()
         {
-            return View();
+            var model = _db.SANPHAMs.ToList();
+            return View(model);
         }
 
         public ActionResult About()
