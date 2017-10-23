@@ -12,7 +12,6 @@ namespace DA_ShoesOnlineStore.Repositories
         public void AddUser(Models.NguoiDung newUser)
         {
             newUser.role = 0;
-            newUser.NamSinh = null;
 
             _db.NguoiDungs.Add(newUser);
             _db.SaveChanges();

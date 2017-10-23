@@ -46,6 +46,8 @@
                         <div>
                            @* <input type="text"  class="form-control" placeholder="Username" required="" />*@
                             @Html.TextBoxFor(Model => Model.HoTen, new { @class = "form-control", @placeholder = "Họ tên" })
+                            @Html.ValidationMessageFor(Model => Model.HoTen)
+
                         </div>
                         <div>
                             @*<input type="password" class="form-control" placeholder="Password" required="" />*@
@@ -74,6 +76,12 @@
                         <div>
                             @Html.ValidationMessage("AddError")
                         </div>
+
+                        <div>
+                            @Html.ValidationSummary(true)
+                        </div>
+
+
                         @*<div>
                   
                             @Html.TextBoxFor(Model => Model.NamSinh, new { @class = "form-control", @placeholder = "Năm sinh" })

@@ -9,15 +9,28 @@ namespace DA_ShoesOnlineStore.Controllers
 {
     public class HomeController : Controller
     {
-<<<<<<< HEAD
+
         Models.SHOESWebSiteEntities _db = new Models.SHOESWebSiteEntities();
-=======
+
         Repositories.UserDAO userDAO = new Repositories.UserDAO();
->>>>>>> origin/master
+
         public ActionResult Index()
         {
             var model = _db.SANPHAMs.ToList();
             return View(model);
+        }
+
+        public ActionResult Filter(string txtSearch)
+        {
+            if(string.IsNullOrEmpty(txtSearch))
+            {
+                return Index();
+            }
+            else
+            {
+                var model = _db.SANPHAMs.Where(a => a.TenSP.Contains(txtSearch)).ToList();
+                return View("Index", model);
+            }
         }
 
         public ActionResult About()
@@ -44,8 +57,8 @@ namespace DA_ShoesOnlineStore.Controllers
                 if(ModelState.IsValid)
                 { 
                     userDAO.AddUser(newUser);
-                    ModelState.AddModelError("", "Thêm người dùng thành công");
-                    return RedirectToAction("Index");
+                   
+                    return Redirect("http://localhost:54763/Home/Register#signup");
                 }
                 else
                 {
@@ -82,7 +95,7 @@ namespace DA_ShoesOnlineStore.Controllers
                 {
                     
                     return RedirectToAction("Index");
-                  
+
                 }
             }
             catch (Exception)

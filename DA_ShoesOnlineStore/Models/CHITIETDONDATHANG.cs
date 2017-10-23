@@ -17,7 +17,6 @@ namespace DA_ShoesOnlineStore.Models
         public int MaDonHang { get; set; }
         public int MaSP { get; set; }
         public Nullable<int> SoLuong { get; set; }
-        public Nullable<decimal> DonGia { get; set; }
     
         public virtual DONDATHANG DONDATHANG { get; set; }
         public virtual SANPHAM SANPHAM { get; set; }

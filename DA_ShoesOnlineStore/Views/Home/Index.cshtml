@@ -47,8 +47,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="top-header-main">
 			<div class="col-md-4 top-header-left">
 				<div class="search-bar">
-					<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                    @using (Html.BeginForm("Filter", "Home", FormMethod.Get))
+                    {
+
+
+				@*	<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">*@
+                    @Html.Editor("txtSearch", new { @class = "form-control", @placeholder = "Tài khoản" })
 					<input type="submit" value="">
+                    }
 				</div>
 			</div>
 			<div class="col-md-4 top-header-middle">
@@ -347,6 +353,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--start-shoes--> 
 	<div class="shoes"> 
 		<div class="container"> 
+            <div>
+
+            </div>
                 @foreach (var sanPham in Model)
                 {
                     <div class="product-one">
