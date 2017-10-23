@@ -20,12 +20,13 @@ namespace DA_ShoesOnlineStore.Controllers
         public ActionResult Single(int sp)
         {
             SANPHAM sp1 = _db.SANPHAMs.SingleOrDefault(n => n.MaSP == sp);
-            if(sp1==null)
+            if (sp1 == null)
             {
                 Response.StatusCode = 404;
                 return null;
             }
             return View(sp1);
         }
+        
     }
 }

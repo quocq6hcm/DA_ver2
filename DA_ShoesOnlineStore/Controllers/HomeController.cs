@@ -20,6 +20,7 @@ namespace DA_ShoesOnlineStore.Controllers
         public ActionResult Index()
         {
             System.Web.HttpContext.Current.Session["Cart"] = null;
+
             var model = _db.SANPHAMs.ToList();
             return View(model);
         }
