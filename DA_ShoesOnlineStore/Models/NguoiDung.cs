@@ -28,7 +28,6 @@ namespace DA_ShoesOnlineStore.Models
         public string Email { get; set; }
         public string DiaChiKH { get; set; }
         public string DienThoaiKH { get; set; }
-        public Nullable<System.DateTime> NamSinh { get; set; }
         public Nullable<int> role { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

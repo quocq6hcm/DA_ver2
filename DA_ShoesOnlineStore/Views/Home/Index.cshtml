@@ -47,8 +47,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="top-header-main">
 			<div class="col-md-4 top-header-left">
 				<div class="search-bar">
-					<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                    @using (Html.BeginForm("Filter", "Home", FormMethod.Get))
+                    {
+
+
+				@*	<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">*@
+                    @Html.Editor("txtSearch", new { @class = "form-control", @placeholder = "Tài khoản" })
 					<input type="submit" value="">
+                    }
 				</div>
 			</div>
 			<div class="col-md-4 top-header-middle">
@@ -61,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
 							<img src="~/Images/Sample/cart-1.png" alt="" />
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Xóa Giỏ Hàng</a></p>
+						<p><a href="javascript:;" class="simpleCart_empty">Giỏ Hàng Trống</a></p>
 						<div class="clearfix"> </div>
 					</div>
 			</div>
@@ -346,7 +352,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--end-banner-bottom--> 
 	<!--start-shoes--> 
 	<div class="shoes"> 
-		<div class="container">
+		<div class="container"> 
+            <div>
+
+            </div>
                 @foreach (var sanPham in Model)
                 {
                     <div class="product-one">
@@ -355,7 +364,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <a href="@Url.Action("Single", "Product", new { @sp = sanPham.MaSP })">
                                     <img src="@Url.Content("~/Images/SanPham/" + @sanPham.AnhBia)" alt="Images" />
                                     <div class="mask">
-                                        <span>Chi Tiết</span>
+                                        <span>Quick View</span>
                                     </div>
                                 </a>
                                 <h4>@sanPham.TenSP</h4>

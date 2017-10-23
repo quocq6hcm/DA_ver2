@@ -30,6 +30,8 @@ namespace DA_ShoesOnlineStore.Models
         public Nullable<System.DateTime> NgayCapNhat { get; set; }
         public Nullable<int> MaNCC { get; set; }
         public Nullable<int> MaKM { get; set; }
+        public Nullable<int> CoGiay { get; set; }
+        public string MauSac { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETDONDATHANG> CHITIETDONDATHANGs { get; set; }

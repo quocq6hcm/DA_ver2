@@ -13,8 +13,9 @@ namespace DA_ShoesOnlineStore.Controllers
         {
             return View();
         }
-        public ActionResult ShoppingBag()
-        {         
+
+        public ActionResult Checkout()
+        {
             return View();
         }
     }
