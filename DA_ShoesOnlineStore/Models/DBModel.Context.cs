@@ -13,10 +13,10 @@ namespace DA_ShoesOnlineStore.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SHOESWebSiteEntities1 : DbContext
+    public partial class SHOESWebSiteEntities : DbContext
     {
-        public SHOESWebSiteEntities1()
-            : base("name=SHOESWebSiteEntities1")
+        public SHOESWebSiteEntities()
+            : base("name=SHOESWebSiteEntities")
         {
         }
     

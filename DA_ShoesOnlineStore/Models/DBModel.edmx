@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SHOESWebSiteModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="SHOESWebSiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CHITIETDONDATHANG">
           <Key>
             <PropertyRef Name="MaDonHang" />
@@ -200,7 +200,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SHOESWebSiteModel1StoreContainer">
+        <EntityContainer Name="SHOESWebSiteModelStoreContainer">
           <EntitySet Name="CHITIETDONDATHANG" EntityType="Self.CHITIETDONDATHANG" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CTHD" EntityType="Self.CTHD" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DONDATHANG" EntityType="Self.DONDATHANG" Schema="dbo" store:Type="Tables" />
@@ -251,7 +251,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="SHOESWebSiteModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="SHOESWebSiteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="CHITIETDONDATHANG">
           <Key>
             <PropertyRef Name="MaDonHang" />
@@ -465,7 +465,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SHOESWebSiteEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="SHOESWebSiteEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CHITIETDONDATHANGs" EntityType="Self.CHITIETDONDATHANG" />
           <EntitySet Name="CTHDs" EntityType="Self.CTHD" />
           <EntitySet Name="DONDATHANGs" EntityType="Self.DONDATHANG" />
@@ -517,9 +517,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SHOESWebSiteModel1StoreContainer" CdmEntityContainer="SHOESWebSiteEntities1">
+        <EntityContainerMapping StorageEntityContainer="SHOESWebSiteModelStoreContainer" CdmEntityContainer="SHOESWebSiteEntities">
           <EntitySetMapping Name="CHITIETDONDATHANGs">
-            <EntityTypeMapping TypeName="SHOESWebSiteModel1.CHITIETDONDATHANG">
+            <EntityTypeMapping TypeName="SHOESWebSiteModel.CHITIETDONDATHANG">
               <MappingFragment StoreEntitySet="CHITIETDONDATHANG">
                 <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
                 <ScalarProperty Name="MaSP" ColumnName="MaSP" />
@@ -528,7 +528,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CTHDs">
-            <EntityTypeMapping TypeName="SHOESWebSiteModel1.CTHD">
+            <EntityTypeMapping TypeName="SHOESWebSiteModel.CTHD">
               <MappingFragment StoreEntitySet="CTHD">
                 <ScalarProperty Name="MaHD" ColumnName="MaHD" />
                 <ScalarProperty Name="MaSP" ColumnName="MaSP" />
@@ -537,7 +537,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DONDATHANGs">
-            <EntityTypeMapping TypeName="SHOESWebSiteModel1.DONDATHANG">
+            <EntityTypeMapping TypeName="SHOESWebSiteModel.DONDATHANG">
               <MappingFragment StoreEntitySet="DONDATHANG">
                 <ScalarProperty Name="MaDonHang" ColumnName="MaDonHang" />
                 <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
@@ -546,7 +546,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Hoadons">
-            <EntityTypeMapping TypeName="SHOESWebSiteModel1.Hoadon">
+            <EntityTypeMapping TypeName="SHOESWebSiteModel.Hoadon">
               <MappingFragment StoreEntitySet="Hoadon">
                 <ScalarProperty Name="MaHD" ColumnName="MaHD" />
                 <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
@@ -555,7 +555,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="KHUYENMAIs">
-            <EntityTypeMapping TypeName="SHOESWebSiteModel1.KHUYENMAI">
+            <EntityTypeMapping TypeName="SHOESWebSiteModel.KHUYENMAI">
               <MappingFragment StoreEntitySet="KHUYENMAI">
                 <ScalarProperty Name="MaKM" ColumnName="MaKM" />
                 <ScalarProperty Name="GiamGia" ColumnName="GiamGia" />
@@ -566,7 +566,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="LOAISANPHAMs">
-            <EntityTypeMapping TypeName="SHOESWebSiteModel1.LOAISANPHAM">
+            <EntityTypeMapping TypeName="SHOESWebSiteModel.LOAISANPHAM">
               <MappingFragment StoreEntitySet="LOAISANPHAM">
                 <ScalarProperty Name="MaLoai" ColumnName="MaLoai" />
                 <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
@@ -574,7 +574,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="NguoiDungs">
-            <EntityTypeMapping TypeName="SHOESWebSiteModel1.NguoiDung">
+            <EntityTypeMapping TypeName="SHOESWebSiteModel.NguoiDung">
               <MappingFragment StoreEntitySet="NguoiDung">
                 <ScalarProperty Name="MaNguoiDung" ColumnName="MaNguoiDung" />
                 <ScalarProperty Name="HoTen" ColumnName="HoTen" />
@@ -588,7 +588,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="NHACUNGCAPs">
-            <EntityTypeMapping TypeName="SHOESWebSiteModel1.NHACUNGCAP">
+            <EntityTypeMapping TypeName="SHOESWebSiteModel.NHACUNGCAP">
               <MappingFragment StoreEntitySet="NHACUNGCAP">
                 <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
                 <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
@@ -596,7 +596,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SANPHAMs">
-            <EntityTypeMapping TypeName="SHOESWebSiteModel1.SANPHAM">
+            <EntityTypeMapping TypeName="SHOESWebSiteModel.SANPHAM">
               <MappingFragment StoreEntitySet="SANPHAM">
                 <ScalarProperty Name="MaSP" ColumnName="MaSP" />
                 <ScalarProperty Name="TenSP" ColumnName="TenSP" />

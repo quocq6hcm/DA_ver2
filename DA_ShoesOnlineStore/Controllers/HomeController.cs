@@ -13,9 +13,13 @@ namespace DA_ShoesOnlineStore.Controllers
         Models.SHOESWebSiteEntities _db = new Models.SHOESWebSiteEntities();
 
         Repositories.UserDAO userDAO = new Repositories.UserDAO();
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
+            System.Web.HttpContext.Current.Session["Cart"] = null;
             var model = _db.SANPHAMs.ToList();
             return View(model);
         }
