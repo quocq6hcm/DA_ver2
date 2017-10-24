@@ -16,7 +16,6 @@ namespace DA_ShoesOnlineStore.Controllers
         {
             return View();
         }
-
         public ActionResult Single(int sp)
         {
             SANPHAM sp1 = _db.SANPHAMs.SingleOrDefault(n => n.MaSP == sp);
@@ -25,6 +24,8 @@ namespace DA_ShoesOnlineStore.Controllers
                 Response.StatusCode = 404;
                 return null;
             }
+            //var list = _db.SANPHAMs.Where(c => c.MaLoai.Equals(sp1.MaLoai)).ToList();       
+            //ViewBag.list = list;
             return View(sp1);
         }
         
