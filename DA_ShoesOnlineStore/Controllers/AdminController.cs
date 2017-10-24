@@ -9,9 +9,35 @@ namespace DA_ShoesOnlineStore.Controllers
     public class AdminController : Controller
     {
         // GET: Admin
+        Models.SHOESWebSiteEntities _db = new Models.SHOESWebSiteEntities();
+
+       
+
+        public Models.NguoiDung GetAdmin()
+        {
+            var UserId = Session["UserId"];
+            var role = Session["Role"];
+            return _db.NguoiDungs.Find(UserId);
+        }
+
+
+
         public ActionResult Index()
         {
-            return View();
+            
+            
+            if (GetAdmin() != null)
+            {
+                
+                return View(GetAdmin());
+            }
+            else
+                return View();
+        }
+
+        public ActionResult AddProduct()
+        {
+            return View(GetAdmin());
         }
     }
 }

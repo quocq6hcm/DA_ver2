@@ -335,6 +335,7 @@
     <Content Include="Views\Admin\AddProduct.cshtml" />
     <Content Include="Views\Booking\Checkout.cshtml" />
     <Content Include="Views\Product\Single.cshtml" />
+    <Content Include="Views\Booking\aa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

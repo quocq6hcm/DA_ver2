@@ -26,6 +26,9 @@ namespace DA_ShoesOnlineStore.Repositories
                 if (u.MatKhau.Equals(loginUser.MatKhau))
                 {
                     HttpContext.Current.Session["User"] = u.HoTen;
+                    HttpContext.Current.Session["UserId"] = u.MaNguoiDung;
+                    HttpContext.Current.Session["Role"] = u.role;
+
                     return u;
                 }
                     

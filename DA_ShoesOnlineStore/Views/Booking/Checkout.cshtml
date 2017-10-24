@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<DA_ShoesOnlineStore.Controllers.CartItem>
+
 @{
     ViewBag.Title = "Checkout";
     Layout = null;
@@ -154,26 +155,33 @@ $(document).ready(function(c) {
                             <li><span style="position:relative; left:35%">Hình ảnh</span></li>
                             <li><span style="position:relative; left:35%">Tên giày</span></li>
                             <li><span style="position:relative; left:35%">Giá</span></li>
-                            <li><span style="position:relative; left:35%">Tình trạng</span></li>
+                            <li><span style="position:relative; left:35%">Số lượng</span></li>
+                            <li><span style="position:relative; left:35%">Tổng giá</span></li>
+
                             <li> </li>
                             <div class="clearfix"> </div>
                         </ul>
-                        @using (Html.BeginForm())
+                        @foreach(var item in Model)
                         {
-                            
-                            <ul class="cart-header" name="cart">
-                                <div class="ngq">
-                                <p>@Html.ActionLink("Xóa","Remove", "Booking", new { id = 1 } )</p></div>
-                                <li class="ring-in">
-                                    <a href="single.html"><img src="~/Images/Sample/s-1.jpg" class="img-responsive" alt=""></a>
-                                </li>
-                                <li><span>Woo Dress</span></li>
-                                <li><span>$ 290.00</span></li>
-                                <li><span>In Stock</span></li>
-                                <li> <a href="single.html" class="add-cart cart-check">ADD TO CART</a></li>
-                                <div class="clearfix"> </div>
-                            </ul>
+                            using (Html.BeginForm())
+                            {
+                                <ul class="cart-header" name="cart">
+                                    <div class="ngq">
+                                        <p>@Html.ActionLink("Xóa", "Remove", "Booking", new { MaSP = item.MaSP }, null)</p>
+                                    </div>
+                                    <li class="ring-in">
+                                        <a href="#"><img src="@Url.Content("~/Images/SanPham/" + @item.AnhBia)" class="img-responsive" alt=""></a>
+                                    </li>
+                                    <li><span>@item.TenSP</span></li>
+                                    <li><span>@item.DonGia</span></li>
+                                    <li><span>@item.SoLuong</span></li>
+                                    <li><span>@(float.Parse(item.DonGia) * (item.SoLuong))</span></li>
+@*                                    <li> <a href="single.html" class="add-cart cart-check">ADD TO CART</a></li>*@
+                                    <div class="clearfix"> </div>
+                                </ul>
+                            }
                         }
+                        <a href="#" class="add-cart cart-check">Xác nhận thanh toán</a>
                         
                         @*<ul class="cart-header">
                             
